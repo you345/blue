@@ -1,7 +1,7 @@
 # blue
 blue-intelj1800
 
-- https://techoverflow.net/2021/06/14/a-simple-coreos-config-for-beginners-with-password-login/
+[[https://techoverflow.net/2021/06/14/a-simple-coreos-config-for-beginners-with-password-login/]]
 
 ```
 [live cmdline] sudo nmgui
