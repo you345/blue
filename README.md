@@ -22,10 +22,10 @@ podman run -i --rm quay.io/coreos/fcct:release --pretty --strict < ignition.yaml
 ```
 
 ```
-USB Wi-Fiアダプター 管理画面へは同一セグメントが見えるPCから
+USB Wi-Fiアダプター 管理画面へは同一セグメントが見えるPCからecset-200の検索ツールを使って設定する。
 WLI-UTX-AG300  Ver.1.05
 EC50C4DD5A1B1F
 50:C4:DD:5A:1B:1F
-ssid: ORBI04 dhcp　→　AsusRTに切り替え実施。
+ssid: asus5g dhcp
 admin / password
 ```
