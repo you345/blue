@@ -6,6 +6,11 @@ blue-intelj1800
 [[https://github.com/coreos/container-linux-config-transpiler/]]
 
 ```
+podman run -ti --rm quay.io/coreos/mkpasswd --method=yescrypt
+docker run -i --rm quay.io/coreos/fcct:release --pretty --strict < ignition.yaml > ignition.ign
+```
+
+```
 [live cmdline] sudo nmgui
  inet 192.168.2.40/24
  Current DNS Server: 192.168.2.1
