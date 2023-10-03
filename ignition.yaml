@@ -51,4 +51,25 @@ storage:
         inline: |
           # Enable SSH password login
           PasswordAuthentication yes
-
+    - path: /etc/NetworkManager/system-connections/enp1s0.nmconnection
+      mode: 0600
+      contents:
+        inline: |
+          [connection]
+          id=enp1s0
+          type=ethernet
+          interface-name=enp1s0
+          [ipv4]
+          address1=192.168.2.40/24
+          method=manual
+    - path: /etc/NetworkManager/system-connections/enp2s0.nmconnection
+      mode: 0600
+      contents:
+        inline: |
+          [connection]
+          id=enp2s0
+          type=ethernet
+          interface-name=enp2s0
+          [ipv4]
+          method=auto
+          dhcp-hostname=coreos-enp2s0
