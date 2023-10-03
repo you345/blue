@@ -47,7 +47,7 @@
       {
         "path": "/etc/NetworkManager/system-connections/enp1s0.nmconnection",
         "contents": {
-          "source": "data:,%5Bconnection%5D%0Aid%3Denp1s0%0Atype%3Dethernet%0Ainterface-name%3Denp1s0%0A%5Bipv4%5D%0Aaddress1%3D192.168.2.40%2F24%0Amethod%3Dmanual%0A"
+          "source": "data:,%5Bconnection%5D%0Aid%3Denp1s0%0Atype%3Dethernet%0Ainterface-name%3Denp1s0%0A%5Bipv4%5D%0Aaddress1%3D192.168.2.40%2F24%2C192.168.2.1%0Adns%3D192.168.2.1%0Amethod%3Dmanual%0A"
         },
         "mode": 384
       },
