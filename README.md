@@ -10,6 +10,8 @@ blue-intelj1800
 ```
 podman run -ti --rm quay.io/coreos/mkpasswd --method=yescrypt
 podman run -i --rm quay.io/coreos/fcct:release --pretty --strict < ignition.yaml > ignition.ign            # podman -> docker
+docker run -it --rm debian:11-slim bash -c 'apt-get update -y && apt-get install -y speedtest-cli && speedtest-cli'
+
 ```
 
 ```
