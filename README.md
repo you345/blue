@@ -7,7 +7,7 @@ blue-intelj1800
 
 ```
 podman run -ti --rm quay.io/coreos/mkpasswd --method=yescrypt
-docker run -i --rm quay.io/coreos/fcct:release --pretty --strict < ignition.yaml > ignition.ign
+podman run -i --rm quay.io/coreos/fcct:release --pretty --strict < ignition.yaml > ignition.ign            # podman -> docker
 ```
 
 ```
