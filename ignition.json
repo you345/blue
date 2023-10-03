@@ -10,7 +10,7 @@
           "docker"
         ],
         "name": "admin",
-        "passwordHash": "$y$j9T$n6h8P2ik8tfoNUFBBoly00$7bnrMF8oFrB25Fc3NqigqEH/MI5YXIJwtCG/iEsns.2"
+        "passwordHash": "$y$j9T$iFDpsXgDBSeGW2jHNziZG.$LZhq73sFcCkqtdE.F2tppALKcSt/mNWXcwbCAshr5a9"
       }
     ]
   },
@@ -39,7 +39,7 @@
       },
       {
         "contents": {
-          "source": "data:,%23%20Enable%20SSH%20password%20login%0APasswordAuthentication%20yes%0A"
+          "source": "data:,%23%20Enable%20SSH%20password%20login%0APasswordAuthentication%20yes"
         },
         "mode": 420,
         "path": "/etc/ssh/sshd_config.d/20-enable-passwords.conf"

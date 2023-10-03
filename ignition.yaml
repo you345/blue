@@ -6,7 +6,7 @@ passwd:
       groups:
         - "sudo"
         - "docker"
-      password_hash: $y$j9T$n6h8P2ik8tfoNUFBBoly00$7bnrMF8oFrB25Fc3NqigqEH/MI5YXIJwtCG/iEsns.2
+      password_hash: $y$j9T$iFDpsXgDBSeGW2jHNziZG.$LZhq73sFcCkqtdE.F2tppALKcSt/mNWXcwbCAshr5a9
 
 systemd:
   units:
