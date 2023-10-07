@@ -57,6 +57,20 @@
           "source": "data:,%5Bconnection%5D%0Aid%3Denp2s0%0Atype%3Dethernet%0Ainterface-name%3Denp2s0%0A%5Bipv4%5D%0Amethod%3Dauto%0Adhcp-hostname%3Dcoreos-enp2s0%0A"
         },
         "mode": 384
+      },
+      {
+        "path": "/etc/NetworkManager/system-connections/enp3s0.nmconnection",
+        "contents": {
+          "source": "data:,%5Bconnection%5D%0Aid%3Denp3s0%0Atype%3Dethernet%0Ainterface-name%3Denp3s0%0A%5Bipv4%5D%0Aaddress1%3D192.168.3.1%2F24%0Amethod%3Dmanual%0A"
+        },
+        "mode": 384
+      },
+      {
+        "path": "/etc/NetworkManager/system-connections/enp6s0.nmconnection",
+        "contents": {
+          "source": "data:,%5Bconnection%5D%0Aid%3Denp6s0%0Atype%3Dethernet%0Ainterface-name%3Denp6s0%0A%5Bipv4%5D%0Aaddress1%3D192.168.4.1%2F24%0Amethod%3Dmanual%0A"
+        },
+        "mode": 384
       }
     ]
   },

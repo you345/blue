@@ -74,3 +74,25 @@ storage:
           [ipv4]
           method=auto
           dhcp-hostname=coreos-enp2s0
+    - path: /etc/NetworkManager/system-connections/enp3s0.nmconnection
+      mode: 0600
+      contents:
+        inline: |
+          [connection]
+          id=enp3s0
+          type=ethernet
+          interface-name=enp3s0
+          [ipv4]
+          address1=192.168.3.1/24
+          method=manual
+    - path: /etc/NetworkManager/system-connections/enp6s0.nmconnection
+      mode: 0600
+      contents:
+        inline: |
+          [connection]
+          id=enp6s0
+          type=ethernet
+          interface-name=enp6s0
+          [ipv4]
+          address1=192.168.4.1/24
+          method=manual
