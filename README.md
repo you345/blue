@@ -20,6 +20,10 @@ docker run -it --rm debian:11-slim bash -c 'apt-get update -y && apt-get install
  Current DNS Server: 192.168.2.1
          DNS Servers: 192.168.2.1
 [live cmdline] sudo coreos-installer install /dev/sda --copy-network --ignition-url https://techoverflow.net/coreos.ign
+[live cmdline2] git clone https://xxxxxxxxxxxx
+[live cmdline2] cd blue
+[live cmdline2] git pull
+[live cmdline2] sudo coreos-installer install /dev/sda --ignition ./ignition.ign
 [admin@CoreOS ~]$ docker run -d -p 22001:3000 --name=sshs --restart=on-failure wettyoss/wetty --ssh-host=192.168.2.40
 ```
 
