@@ -31,3 +31,31 @@ EC50C4DD5A1B1F
 ssid: asus5g dhcp
 admin / password
 ```
+
+```
+[admin@CoreOS ~]$ ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute
+       valid_lft forever preferred_lft forever
+2: enp1s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 00:1a:8c:69:4a:bc brd ff:ff:ff:ff:ff:ff
+    inet 192.168.2.40/24 brd 192.168.2.255 scope global noprefixroute enp1s0
+       valid_lft forever preferred_lft forever
+    inet6 240f:69:fd12:1:e21d:e784:5112:b215/64 scope global dynamic noprefixroute
+       valid_lft 274sec preferred_lft 274sec
+    inet6 fe80::ee3e:bbd6:23b5:3dd9/64 scope link noprefixroute
+       valid_lft forever preferred_lft forever
+3: enp2s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+    link/ether 00:1a:8c:69:4a:bd brd ff:ff:ff:ff:ff:ff
+4: enp3s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+    link/ether 00:1a:8c:69:4a:be brd ff:ff:ff:ff:ff:ff
+5: enp6s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+    link/ether 00:1a:8c:69:4a:bf brd ff:ff:ff:ff:ff:ff
+6: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default
+    link/ether 02:42:ac:e0:1a:5b brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+```
