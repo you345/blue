@@ -12,6 +12,22 @@ systemd:
   units:
     - name: docker.service
       enabled: true
+    - name: install-docker-compose.service
+      enabled: true
+      contents: |
+        [Unit]
+        Description=Install docker-compose on first boot
+        DefaultDependencies=no
+        Conflicts=shutdown.target
+        After=network-online.target
+        Before=shutdown.target
+        ConditionFirstBoot=yes
+        [Service]
+        Type=oneshot
+        RemainAfterExit=no
+        ExecStart=/usr/bin/rpm-ostree install -r docker-compose
+        [Install]
+        WantedBy=network-online.target
 
     - name: containerd.service
       enabled: true

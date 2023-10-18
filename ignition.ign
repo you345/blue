@@ -81,6 +81,11 @@
         "name": "docker.service"
       },
       {
+        "contents": "[Unit]\nDescription=Install docker-compose on first boot\nDefaultDependencies=no\nConflicts=shutdown.target\nAfter=network-online.target\nBefore=shutdown.target\nConditionFirstBoot=yes\n[Service]\nType=oneshot\nRemainAfterExit=no\nExecStart=/usr/bin/rpm-ostree install -r docker-compose\n[Install]\nWantedBy=network-online.target\n",
+        "enabled": true,
+        "name": "install-docker-compose.service"
+      },
+      {
         "enabled": true,
         "name": "containerd.service"
       },
