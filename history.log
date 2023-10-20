@@ -9,3 +9,8 @@
 ip: 192.168.2.40
 id: k++++++ / k+++--9
 ```
+
+```
+1. userをsudoグループに  usermod -aG sudo user
+2. 固定IPの設定          nmtui
+```
