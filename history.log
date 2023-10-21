@@ -14,3 +14,8 @@ id: k++++++ / k+++--9
 1. userをsudoグループに  usermod -aG sudo user
 2. 固定IPの設定          nmtui
 ```
+
+```
+following docker install on debian.
+https://docs.docker.com/engine/install/debian/
+```
