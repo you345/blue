@@ -22,3 +22,16 @@ https://docs.docker.com/engine/install/debian/
 
 sudo apt-get install docker-compose
 ```
+
+```
+◇上位ルータにルーティングを追加
+静的ルーティングエントリhelp
+1～10 |11～20 |21～30 |31～40 |41～50
+宛先IPアドレスhelp	ゲートウェイhelp	削除help
+192.168.4.0/24	192.168.2.40	削除
+192.168.3.0/24	192.168.2.40	削除
+
+sudo apt-get install dnsmasq
+sudo vi /etc/sysctl.conf
+  net.ipv4.ip_forward=1
+-> reboot``
